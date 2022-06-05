@@ -6,7 +6,7 @@ let base = [
 ]
 let input = { "label": "C++", "category": "programmingLanguages", "priority":4}
 let res = base.filter(element =>  element.label === input.label)
-if (res.length<=0) {
+if (res.length === 0) {
     base.push({id: input.label.toLowerCase(), ...input})
 }
 console.log(base);
