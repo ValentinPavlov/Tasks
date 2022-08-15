@@ -35,7 +35,7 @@ router.put("/:id", (req,res) => {
 })
 
 router.delete('/:id', (req,res) => {
-    const {id} = req.params
+    const id = req.params.id
     const users = deleteData(id)
     res.status(200).send(users)
 })
